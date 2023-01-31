@@ -30,7 +30,7 @@ public class VillaApiController : ControllerBase
     }
 
     [HttpPost]
-    [ProducesResponseType(StatusCodes.Status201OK)]
+    [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status505HttpVersionNotsupported)]
     public ActionResult<VillaDTO> CreateVilla ([FromBody] VillaDTO villaDTO)
